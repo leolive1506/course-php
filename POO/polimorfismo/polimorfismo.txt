@@ -1,0 +1,4 @@
+Polimorfismo
+    - Muitas formas
+    - métodos com mesmo nome em classes herdadas tem comportamentos diferentes
+    - Buscar value da class pai, usa parent::metodo()

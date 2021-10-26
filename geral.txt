@@ -1,0 +1,17 @@
+- filename - todo nome do arquivo, inclusive suas pastas
+
+No if
+    - quando fazer uma verficação que deve retornar true
+        basta colocar if(validação) {} sem precisar "== true"
+
+DIRECTORY_SEPARATOR
+    Concatena com diretório
+    Muda de linux p/ windows por isso é bom usar
+    linux "/"
+    windows "\"
+
+file_exists
+    Verifica se o arquivo existe
+
+P fazer um json_encode() tem que ser de um array
+    json_encode(array())

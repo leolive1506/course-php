@@ -1,0 +1,8 @@
+Herança
+    Herda atributos e métodos (se for public ou protegidos) de uma classe pai
+
+    - Abstração
+        Fazer uma classe genérica a ponto de poder usar ela em vários lugares
+        Ex: uma classe transporte pode ser usada em diversos tipo de veiculos porque tem muitas coisas em comum
+
+    - Palavra extends que diz que a classe é filha

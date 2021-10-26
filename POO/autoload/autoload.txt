@@ -1,0 +1,14 @@
+Incluindo classes com Autoload
+    - Carregar as classes automáticamente sem precisar de muitos require_once
+    - Usar nome do arquivo com mesmo nome da class
+    
+    Usar na própria pasta
+        function __autoload($nomeClasse) {
+            // var_dum($nomeClasse) // ver oq ta retornando
+            require_once("$nomeClasse.php")
+        }
+    
+    Usar em diretórios diferentes ex02.php
+        spl_autoload_register();
+            dentro de parentese coloca o nome da função ou a função diretamente la dentro
+

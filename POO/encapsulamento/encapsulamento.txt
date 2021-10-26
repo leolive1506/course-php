@@ -1,0 +1,21 @@
+Aula 06 (ex01.php)
+Encapsulamento
+    - Proteger ou controlar oq pode ver, quem pode acessar, e a forma que será acessada
+
+    - public 
+        . Todos podem ver
+
+    - protected
+        quem pode acessar um atributo ou método protected
+            . So quem ta dentro da própra classe
+            . Ou quem herda dessa classe (classe filha)
+
+    - private
+        quem pode acessar um atributo ou método privete
+            . Mais protegido que o protected
+            . Diferença entre private e protected
+                - No privete Nem mesmo os herdeiros conseguem acessar 
+                - So os que estão dentro da própria classe
+
+    
+-------------------------------------------------------    

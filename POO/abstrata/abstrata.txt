@@ -1,0 +1,8 @@
+
+Classes Abstratas
+    - semelhante intereface
+    - define não somento os metodos mas também oq eles fazem
+    - Objeto nunca instancia a classe abstrata
+    - tem que criar uma outra classe p conseguir instanciar o obj
+    - Uma classe herda só de uma classe abstrata mas pode implementar várias interfaces
+    - Na interface declara que precisa colocar na class, já na abstrata, uma vez declarada e extendida não precisa mais chamar os métodos

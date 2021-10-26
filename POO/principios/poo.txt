@@ -1,0 +1,117 @@
+Aula 01 
+Conceitos iniciais:
+    - Estilo programação
+    - Classe
+        . É uma Caixa que protege o conteúdo dentro dela
+
+Encapsulamento 
+    Controla quem pode acessar os atributos
+
+Variavel -> *Atributo* dentro da classe
+Função -> Chamada *Método* dentro da classe
+Classe -> conjuntos de atributos e métodos
+Objeto -> *variavel que representa* ou tira uma copia da classe
+Instancia -> usar a classe, variavel instacia a Classe
+
+---------------------------------------------------------------------------------- 
+
+Aula 02
+Criando uma classe:
+    class Name {
+        public $nameVariavel;
+        /* acessar variavel dentro metodo: $this->variavelsem$ */
+        public function metodo() {
+            return ".$this->nameVariavel;
+        }
+    }
+
+$Leo = new Name;
+$Leo->nameVariavel = "Leonardo";
+echo $Leo->metodo();
+
+---------------------------------------------------------------------------------- 
+
+Aula 03 (ex02.php)
+Atributos e Metodos
+    - private aumenta controle e protege o atributo
+
+. geters and seters
+
+    Usado pra criar um atributo com restrições
+
+    class NameClass {
+    private $nameAtributo;
+
+    public function getAtributo() {
+        return $this-> nameAtributo;
+    }
+
+    /* quado executada se torna objeto */
+    public function setModelo($value) {
+        $this-nameAtributo = $value
+        /* não retorna nada, so muda o valor atributo */
+    }
+}
+
+-------------------------------------------------------
+Aula 04 (ex03.php)
+Métodos estáticos (static)
+    - acessa atributos e métodos sem criar objeto ou representação
+
+    - Pode fazer fora da classe
+    - Para usar
+        NomeDaClasse::nomeMetodoStatic
+
+    1) faz os geter and seters
+        ex: public function getNumero():int {
+                return $this->numero;
+            }
+
+            public function setNumero($valueCPF) {
+                $this->numero = $valueCPF;
+            }
+
+    2) Cria o metodo static
+            public static function validarCpf($cpf) {
+                // regra função
+            }
+
+    3) No setAtributo
+        - Vai o nome da classe + :: + método static
+        public function setNumero($valueCPF) {
+                $this->numero = $valueCPF;
+                $resultado = Documento::validarCpf($valueCPF)
+            }
+
+-------------------------------------------------------
+
+Aula 05 (ex04.php)
+Métodos mágicos
+    - Usa os ojt e é chamado o os metodos automáticamente
+    
+    - Começa com __
+
+    - Toda vez que for criar um método construtor usar ____construct
+
+    ex: private $logradouro;
+        private $numero;
+        private $cidade;
+
+        public function __construct($log, $num, $cid){
+            
+            $this->logradouro = $log;
+            $this->numero = $num;
+            $this->cidade = $cid;
+
+        }
+
+    - __destruct
+        . Quando o obj é removido da memoria
+        . Ultimo a ser executado antes de liberar a memória
+            .Usado fim da execução ou quando quiser tirar
+            .Com finalidade de Matar variaveis, desconectar do banco de dados
+
+    - __toString
+        . Transforma obj em string
+
+-------------------------------------------------------

@@ -1,0 +1,10 @@
+Aula 07
+Interface
+    - Organizar o próprio código
+    - Tem um determinado padrão
+    - Diz quais são os métodos, parâmetros, tipo de declaração
+    - Não pode deixar de declarar algum dos métodos que a interface diz que tem que ter
+    - Uma classe pode implementar várias interfaces
+    - Nome do método precisa ser o mesmo, já o nome da variável pode mudar
+    - se quiser implementar mais de uma interface
+        class Civic implements InterfaceONe, InterfaceTwo

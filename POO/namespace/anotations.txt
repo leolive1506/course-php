@@ -1,0 +1,10 @@
+Boas práticas
+    - Diretório p as classes
+    - Organizar por assunto
+
+    . Namespace
+        - Da um nome para os espaços
+        - Usar classe com mesmo nome e atribui um nome no espaço dela
+        - permite agrupar as classes dentro de diretórios de forma organizada
+      Informar o namespace do arquivo
+          namespace Name;
